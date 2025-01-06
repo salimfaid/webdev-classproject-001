@@ -1,74 +1,61 @@
 @import url("reset.css");
 
 html {
-	padding: 0;
-	margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	color: #333333;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	line-height: 1.6;
-	background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4402a8, #750559);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: "Courier New", Courier, monospace;
-	font-weight: bold;
-	line-height: 1;
-	text-transform: uppercase;
-	margin: 0 0 1.6rem;
+.quote-card {
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 90px 120px;
+    text-align: center;
+    position: relative;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
-p {
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.6;
-	margin: 0 0 1.6rem;
+.quote-text {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+    font-style: italic; 
 }
 
-a {
-	color: #0056b3;
-	border-bottom: 2px solid transparent;
-	transition: all 0.5s ease-in-out;
+.author {
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
-a:hover {
-	color: #002348;
-	border-bottom: 2px solid #002348;
+.quote-mark {
+    font-size: 4rem; 
+    color: rgba(255, 255, 255, 0.842);
+    position: absolute;
 }
 
-hr {
-	margin: 3.2rem 1.6rem;
-	color: #555555;
-	border-color: #555555;
+.quote-mark.left {
+    top: -30px;
+    left: -20px;
 }
 
-/* Layout */
-
-.container {
-	padding: 0;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1000px;
-}
-
-/* Media Queries */
-
-@media (min-width: 699px) {
-
-	/* CSS HERE */
-
-}
-
-/* Desktop Media Query */
-@media (min-width: 999px) {
-
-	/* CSS HERE */
-
+.quote-mark.right {
+    bottom: -30px; 
+    right: -20px;
 }
